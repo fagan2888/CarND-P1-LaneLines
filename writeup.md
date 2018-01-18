@@ -25,6 +25,7 @@ The goals / steps of this project are the following:
 [image6]: ./examples/bitor.jpg "BitOr"
 
 [image7]: ./examples/result.jpg "Result"
+
 ---
 
 ### Reflection
