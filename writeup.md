@@ -40,11 +40,11 @@ First, I convert the images to grayscale to retain only the intensity informatio
 
 Second, I smoothen the image using Gaussian blur to remove noise.
 
-Third, I pass the immage through Canny edge detector to obtain the sharp boundaries in the image, which includes the lane lines on the road.
+Third, I pass the image through Canny edge detector to obtain the sharp boundaries in the image, which includes the lane lines on the road.
 
 ![alt text][image2]
 
-Fourth, I smoothen the obtained edged by passing it thriough Gaussian filter. This smoothens out sharp noises in the detected edges.
+Fourth, I smoothen the obtained edged by passing it through Gaussian filter. This smoothens out sharp noises in the detected edges.
 
 ![alt text][image3]
 
@@ -82,11 +82,11 @@ def draw_lines(img, lines, y0, y3, color=[255, 0, 0], thickness=2):
 ```
 ### 2. Identify potential shortcomings with your current pipeline
 
-1. Since I've based my lane detection on the longest line among the lines returned by the Hough function, problems may occur in lane detection if there are longer marks just beside the lane makrs, such as tyre marks of other vehicles,pavement linings or other kind of shadows.
+1. Since I've based my lane detection on the longest line among the lines returned by the Hough function, problems may occur in lane detection if there are longer marks just beside the lane marks, such as tyre marks of other vehicles,pavement linings or other kind of shadows.
 
-2. The detected line overlays are not strady and tend to flicker too much, especially when the lane lines are not properly identifiable due to dust cover, shadow or otherwise. This is specially noticiable in the challange video where the transition takes between a darker road floor to a lighter road floor.
+2. The detected line overlays are not steady and tend to flicker too much, especially when the lane lines are not properly identifiable due to dust cover, shadow or otherwise. This is specially noticeable in the challenge video where the transition takes between a darker road floor to a lighter road floor.
 
-3. It might not perform well in scenerios where the road turns and bends. 
+3. It might not perform well in scenarios where the road turns and bends. 
 
 ### 3. Suggest possible improvements to your pipeline
 
