@@ -1,6 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup
+Writeup
 ---
 
 **Finding Lane Lines on the Road**
